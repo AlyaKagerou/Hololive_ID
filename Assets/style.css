@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@500&family=Nunito+Sans:ital,opsz,wght@0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+body{
+    background-image: url(img/bg_holoId.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+.navbar{
+    background-color: #fff;
+}
+.navbar-brand{
+    width: 140px;
+    height: 62px;
+}
+.nav-item{
+    margin: 0 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #494949;
+    font-size: 18px;
+}
+.nav-item a:hover{
+    color: #26C5FD;
+}
+.container_content{
+    margin: 0 3.8rem;
+    overflow: hidden;
+}
+.about_holo,
+.videos{
+    margin: 5em 6.7em;
+}
+.t_talent,
+.t_video{
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+.t_talent:after,
+.t_video::after{
+    content: "";
+    position: absolute;
+    background-color: #87cdffce;
+    width: 35%;
+    height: 10px;
+    bottom: -8px;
+    left: 50%;
+    transform: translate(-50%) skew(50deg);
+}
+.card_holoId {
+    width: 235px;
+    height: 388px;
+    border-radius: 20px 20px 0px 0px;
+    margin: 0 0 0 15px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+}
+.card_holoId img{
+    position: absolute;
+    top: 0;
+    width: 430px;
+    height: 640px;
+}
+.card{
+    background-color: #C0E5FF;
+    outline: none;
+    border: none;
+}
+.p_video{
+    margin-top: 1.1rem;
+}
+.footer {
+    background-color:#475266 ;
+    color: #fff;
+    text-align: left;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+.footer1 {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+}
+.footer1 .footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-link:hover {
+    color: #191919;
+}
+.footer2 {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+}
+.company {
+    margin-right: 0px;
+}
+.company img {
+    margin-left: 6px;
+}
+.twyt {
+    list-style: none;
+    margin: 10px -35px;
+}
+.twyt i {
+    color: #fff;
+    margin-right: 25px;
+    transition: 0.3s;
+}
+.twyt i:hover {
+    transform: translateY(-10px);
+}
