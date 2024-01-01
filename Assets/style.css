@@ -6,7 +6,7 @@
     font-family: "Nunito Sans", sans-serif;
 }
 body{
-    background-image: url(img/bg_holoId.png);
+    background-image: url(img/bg_holoId.webp);
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -220,7 +220,7 @@ body{
         width: 90%;
     }
     .card{
-        margin-top: 1.4em;
+        margin-top: 1.2em;
     }
     .company {
         margin: auto;
