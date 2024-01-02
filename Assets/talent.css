@@ -120,6 +120,67 @@ body{
     left: 50%;
     transform: translate(-50%) skew(50deg);
 }
+.row-talent{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.filter-talent{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.filter-talent .filter-item{
+    color: #fff;
+    font-size: 17px;
+    background-color: #919191;
+    border: none;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+}
+.filter-item.active{
+    background-color: #26C5FD;
+    color: #191919;
+}
+.card_holoId{
+    width: 235;
+    height: 388px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    transform: translate(0%, 0%);
+}
+.card_holoId img{
+    width: 200px;
+    height: 800px;
+    object-fit: cover;
+}
+.card_holoId .overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: black;
+    cursor: pointer;                                
+}
+.card_holoId .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.card_holoId:hover .overlay{
+    opacity: 0.8;
+}
 .footer {
     background-color:#475266 ;
     color: #fff;
@@ -163,4 +224,26 @@ body{
 }
 .twyt i:hover {
     transform: translateY(-6px);
+}
+@media screen and (max-width: 768px){
+    .container_content{
+        margin: 0 40px;
+    }
+    .talent-item{
+        width: calc(100% /2);
+    }
+    .card_holoId{
+        width: auto;
+        height: 250px;
+        background-position: center;
+    }
+}
+@media screen and (max-width: 414px){
+    .container_content{
+        margin: 0 20px;
+    }
+    .card_holoId{
+        width: auto;
+        height: 250px;
+    }
 }
