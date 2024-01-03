@@ -143,9 +143,29 @@ body{
     line-height: 1.2;
     transition: all 0.3s ease;
 }
+.filter-item:hover{
+    background-color: #26C5FD;
+    color: #191919;
+}
 .filter-item.active{
     background-color: #26C5FD;
     color: #191919;
+}
+/* animation for show */
+.talent-item.show{
+    animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+/* animation for hide */
+.talent-item.hide{
+    display: none;
 }
 .card_holoId{
     width: 235;
@@ -168,14 +188,14 @@ body{
     bottom: 0;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
-    background: black;
+    background: linear-gradient(180deg, transparent, black);
     cursor: pointer;                                
 }
 .card_holoId .content{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom:0;
+    left: 0%;
+    writing-mode: vertical-lr;
     color: white;
 }
 .card_holoId:hover .overlay{

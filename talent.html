@@ -49,7 +49,7 @@
   <section>
     <div class="container_content">
       <h1 class="t_talent text-center">talent</h1>
-      <div class="row_talent">
+      <div class="row-talent">
         <div class="filter-talent">
           <button class="filter-item active" data-filter="all">All</button>
           <button class="filter-item" data-filter="gen1">Gen 1</button>
@@ -65,7 +65,7 @@
                 <img src="Assets/img/full_AyundaRisu.webp" alt="" style="background-color: #F6BBBB;">
                 <div class="overlay">
                   <div class="content">
-                    <h4>ayunda risu</h4>
+                    <h4>Ayunda Risu</h4>
                   </div>
                 </div>
               </div>
@@ -79,7 +79,7 @@
                 <img src="Assets/img/full_MoonaHoshinova.webp" alt="" style="background-color: #B099DB;">
                 <div class="overlay">
                   <div class="content">
-                    <h4>ayunda risu</h4>
+                    <h4>Moona Hoshinova</h4>
                   </div>
                 </div>
               </div>
@@ -93,91 +93,91 @@
                 <img src="Assets/img/full_AiraniIofifteen.webp" alt="" style="background-color: #AEE457;">
                 <div class="overlay">
                   <div class="content">
-                    <h4>ayunda risu</h4>
+                    <h4>Airani Iofifteen</h4>
                   </div>
                 </div>
               </div>
             </a>
           </div>
         </div>
-        <div class="talent-item gen1">
+        <div class="talent-item gen2">
           <div class="talent-item-inner">
             <a href="#">
               <div class="card_holoId">
                 <img src="Assets/img/full_Kureiji-Ollie.webp" alt="" style="background-color: #C21533;">
                 <div class="overlay">
                   <div class="content">
-                    <h4>ayunda risu</h4>
+                    <h4>Kureiji Ollie</h4>
                   </div>
                 </div>
               </div>
             </a>
           </div>
         </div>
-        <div class="talent-item gen1">
+        <div class="talent-item gen2">
           <div class="talent-item-inner">
             <a href="#">
               <div class="card_holoId">
                 <img src="Assets/img/full_AnyaMelfissa.webp" alt="" style="background-color: #F2C95C;">
                 <div class="overlay">
                   <div class="content">
-                    <h4>ayunda risu</h4>
+                    <h4>Anya Melfissa</h4>
                   </div>
                 </div>
               </div>
             </a>
           </div>
         </div>
-        <div class="talent-item gen1">
+        <div class="talent-item gen2">
           <div class="talent-item-inner">
             <a href="#">
               <div class="card_holoId">
                 <img src="Assets/img/full_PavoliaReine.webp" alt="" style="background-color: #1764B9;">
                 <div class="overlay">
                   <div class="content">
-                    <h4>ayunda risu</h4>
+                    <h4>Pavolia Reine</h4>
                   </div>
                 </div>
               </div>
             </a>
           </div>
         </div>
-        <div class="talent-item gen1">
+        <div class="talent-item gen3">
           <div class="talent-item-inner">
             <a href="#">
               <div class="card_holoId">
                 <img src="Assets/img/full_VestiaZeta.webp" alt="" style="background-color: #BAB9C3;">
                 <div class="overlay">
                   <div class="content">
-                    <h4>ayunda risu</h4>
+                    <h4>Vestia Zeta</h4>
                   </div>
                 </div>
               </div>
             </a>
           </div>
         </div>
-        <div class="talent-item gen1">
+        <div class="talent-item gen3">
           <div class="talent-item-inner">
             <a href="#">
               <div class="card_holoId">
                 <img src="Assets/img/full_KaelaKovalskia.webp" alt="" style="background-color: #FF3D3D;">
                 <div class="overlay">
                   <div class="content">
-                    <h4>ayunda risu</h4>
+                    <h4>Kaela Kovalskia</h4>
                   </div>
                 </div>
               </div>
             </a>
           </div>
         </div>
-        <div class="talent-item gen1">
+        <div class="talent-item gen3">
           <div class="talent-item-inner">
             <a href="#">
               <div class="card_holoId">
                 <img src="Assets/img/full_KoboKanaeru.webp" alt="" style="background-color: #393464;">
                 <div class="overlay">
                   <div class="content">
-                    <h4>ayunda risu</h4>
+                    <h4>Kobo Kanaeru</h4>
                   </div>
                 </div>
               </div>
@@ -219,5 +219,29 @@
   <!-- Footer -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    const filterContainer = document.querySelector(".filter-talent"),
+    galleryItems = document.querySelectorAll(".talent-item");
+
+    filterContainer.addEventListener("click", (event) =>{
+    if(event.target.classList.contains("filter-item")){
+        // deactivate existing active 'filter-item'
+        filterContainer.querySelector(".active").classList.remove("active");
+        // activate new 'filter-item'
+        event.target.classList.add("active");
+        const filterValue = event.target.getAttribute("data-filter");
+        galleryItems.forEach((item) =>{
+        if(item.classList.contains(filterValue) || filterValue === 'all'){
+            item.classList.remove("hide");
+            item.classList.add("show");
+        }
+        else{
+            item.classList.remove("show");
+            item.classList.add("hide");
+        }
+        });
+    }
+    });
+    </script>
 </body>
 </html>
