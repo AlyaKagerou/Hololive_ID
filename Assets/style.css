@@ -129,7 +129,7 @@ body{
     left: 50%;
     transform: translate(-50%) skew(50deg);
 }
-.card_holoId {
+.card_holoId{
     width: 235px;
     height: 388px;
     border-radius: 20px 20px 0px 0px;
@@ -145,8 +145,30 @@ body{
 .card_holoId img{
     position: absolute;
     top: 0;
-    width: 430px;
-    height: 640px;
+    width: 400px;
+    height: 800px;
+    object-fit: cover;
+}
+.card_holoId .overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: linear-gradient(180deg, transparent, black);
+    cursor: pointer; 
+}
+.card_holoId .content{
+    position: absolute;
+    bottom:0;
+    left: 0%;
+    writing-mode: vertical-lr;
+    color: white;
+}
+.card_holoId:hover .overlay{
+    opacity: 0.8;
 }
 .card{
     background-color: #94d2ff;
@@ -221,7 +243,7 @@ body{
         font-size: 0.8em;
     }
     .card_holoId{
-        width: 90%;
+        width: auto;
     }
     .card{
         margin-top: 1.2em;
