@@ -1,241 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Assets/img/Hololive_triangles_logo-1-_2_.ico">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Assets/img/Hololive_logo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="Assets/reine.css">
-    <title>Pavolia Reine - Hololive Indonesia</title>
-</head>
+    <title>Pavolia Reine | Hololive Indonesia</title>
+  </head>
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg p-1 sticky-top">
-        <div class="container-fluid">
-          <img src="Assets/img/Hololive_INDONESIA_logo.webp" class="navbar-brand d-lg-none">
-          <button class="navbar-toggler d-flex d-lg-none flex-column justify-content-around collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="toggler-icon top-bar"></span>
-            <span class="toggler-icon middle-bar"></span>
-            <span class="toggler-icon bottom-bar"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Tentang</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Berita</a>
-              </li>
-              <img src="Assets/img/Hololive_INDONESIA_logo.webp" class="navbar-brand d-lg-block d-none">
-              <li class="nav-item">
-                <a class="nav-link" href="talent.html">Talent</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="musik.html">Musik</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <!-- navbar -->
 
-    <!-- kobo -->
-    <section class="reine-page">
-        <div class="container-content">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mt-3">
-              <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-              <li class="breadcrumb-item"><a href="#">Talent</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Pavolia Reine</li>
-            </ol>
-          </nav>
-          <img src="Assets/img/bg-reine.png" class="img-fluid d-lg-block d-none">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="Assets/img/Reine-full.png" class="talent img-fluid">
-              <span class="fanart d-lg-block d-none">Art: @kinggruk</span>
-            </div>
-            <div class="col-md-6 desc-holo">
-              <h1 class="name-holo">Pavolia Reine</h1>
-              <span class="name-jp">パヴォリア・レイネ</span>
-              <p class="desc">Lady of the Peafowl. Saat belajar di akademi sihir, dia terlibat dalam sebuah insiden dan dipindahkan ke dunia manusia.
-                Sejak saat itu, dia tidak dapat menggunakan banyak sihirnya. <br>
-                Sangat menyukai makanan manis, tetapi lemah dengan makanan yang terlalu pedas. Sekilas, ia tampak sebagai tipe yang elegan, tetapi orang-orang yang menghabiskan lebih banyak waktu bersamanya akan mengetahui bahwa ia memiliki kepribadian yang lebih norak. Bagi sebagian pemirsa, tawanya dianggap mirip dengan suara mesin mobil yang sedang dihidupkan.</p>
-              <ul class="social d-flex">
-                <li><i class="bx bxl-twitter bx-lg"></i></li>
-                <li><i class="bx bxl-facebook bx-lg"></i></li>
-                <li><i class="bx bxl-instagram bx-lg"></i></li>
-                <li><i class="bx bxl-tiktok bx-lg"></i></li>
-                <li><i class="bx bxl-youtube bx-lg"></i></li>
-              </ul>
-            </div>
-          </div>
-          <div class="disc-content">
-            <h1 class="title mt-4 mb-3">Discograhy</h1>
-            <div class="row">
-              <div class="swiper reine">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="card h-100">
-                      <img src="Assets/img/illusionNight.jpg" class="m-3 img-fluid" >
-                      <div class="card-body">
-                        <h5 class="card-title">llusion Night</h5>
-                        <p class="card-text">Pavolia Reine</p>
-                        <ul class="music d-flex">
-                          <li><i class="bx bx-music bx-md"></i></li>
-                          <li><i class="bx bxl-youtube bx-md"></i></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="card h-100">
-                      <img src="Assets/img/gateopenStart.jpg" class="m-3 img-fluid" >
-                      <div class="card-body">
-                        <h5 class="card-title">Gate Open: Start!</h5>
-                        <p class="card-text">Pavolia Reine</p>
-                        <ul class="music d-flex">
-                          <li><i class="bx bx-music bx-md"></i></li>
-                          <li><i class="bx bxl-youtube bx-md"></i></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="card h-100">
-                      <img src="Assets/img/AnoAozoranoSeida.jpg" class="m-3 img-fluid" >
-                      <div class="card-body">
-                        <h5 class="card-title">Ano Aozora no Seida</h5>
-                        <p class="card-text">Pavolia Reine</p>
-                        <ul class="music d-flex">
-                          <li><i class="bx bx-music bx-md"></i></li>
-                          <li><i class="bx bxl-youtube bx-md"></i></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="card h-100">
-                      <img src="Assets/img/AnoAozoranoSeida.jpg" class="m-3 img-fluid" >
-                      <div class="card-body">
-                        <h5 class="card-title">Love Me Love Me</h5>
-                        <p class="card-text">Pavolia Reine</p>
-                        <ul class="music d-flex">
-                          <li><i class="bx bx-music bx-md"></i></li>
-                          <li><i class="bx bxl-youtube bx-md"></i></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="data-profile">
-            <div class="jumbotron">
-              <h1 class="text-center title-profile">data profile</h1>
-              <div class="row" style="padding:0px 20px;">
-                <div class="col-12 col-md-6">
-                  <dl>
-                    <dt>Ulang Tahun</dt>
-                    <dd>9 September</dd>
-                  </dl>
-                  <dl>
-                    <dt>Debut</dt>
-                    <dd>6 Desember 2020</dd>
-                  </dl>
-                  <dl>
-                    <dt>Tinggi Badan</dt>
-                    <dd>172 cm</dd>
-                  </dl>
-                  <dl>
-                    <dt>Unit</dt>
-                    <dd>Hololive Generasi 2</dd>
-                  </dl>
-                </div>
-                <div class="col-12 col-md-6">
-                  <dl>
-                    <dt>Illustrator</dt>
-                    <dd>飯田ぽち。</dd>
-                  </dl>
-                  <dl>
-                    <dt>Fan Name</dt>
-                    <dd>MERAKyats</dd>
-                  </dl>
-                  <dl>
-                    <dt>Hashtags</dt>
-                    <dd>
-                      Stream Tags : #Pavolive
-                      <br />
-                      Fan Art : #Reinessance
-                      <br />
-                      Memes: #Pogvolia
-                    </dd>
-                  </dl>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    <!-- kobo -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg py-3 sticky-top shadow-sm">
+    <div class="container-fluid">
+      <a href="index.html">
+        <img src="Assets/img/Hololive_INDONESIA_logo.webp" alt="logo_hololiveID" class="navbar-brand d-lg-none">
+      </a>
+      <button class="navbar-toggler d-flex d-lg-none flex-column justify-content-around collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="talent.html">Talent</a>
+          </li>
+          <a href="index.html">
+            <img src="Assets/img/Hololive_INDONESIA_logo.webp" alt="logo_hololiveID" class="navbar-brand d-lg-block d-none">
+          </a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Music</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="footer1 d-flex">
-          <ul class="twyt d-flex">
-            <li>
-              <a href="#"><i class="bx bxl-twitter bx-lg"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="bx bxl-youtube bx-lg"></i></a>
-            </li>
-          </ul>
-          <p class="mt-3">
-            <a href="#" class="footer-link">Company Recruit</a> |
-            <a href="#" class="footer-link">Privacy Police</a> |
-            <a href="#" class="footer-link">Contact Us</a>
-          </p>
+  <!-- Hero -->
+  <section>
+    <div class="container_content mt-5">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-12 col-lg-6">
+          <div class="box_img">
+            <img src="Assets/img/full_PavoliaReine.webp" alt="reine" class="reine">
+          </div>
         </div>
-        <div class="footer2 d-flex">
-          <p class="copyright">&copy; 2016 COVER Corp.</p>
-          <p class="company">
-            Operation Company
-            <img src="Assets/img/logo_cover.svg" alt="" />
-          </p>
+        <div class="col-12 col-lg-6">
+          <div class="profile-name">
+            <h1 class="name_talent">pavolia reine</h1>
+            <p class="jp">パヴォリア・レイネ</p>
+            <p class="catchphrase">Perhatian, sang putri merak yang tertiup angin, aku Pavolia Reine dari hololive ID.</p>
+            <div class="detail_profile">
+              <p>Lady of the Peafowl. While studying at a magic academy, she was involved in an incident and transferred to the human world. Since then, she has been unable to use much of her magic.</p>
+              <p>Very fond of sweets, but weak with overly spicy food. At first glance, she seems to be the elegant type, but people who spend some more time with her will find out that she has more of a dorky personality. To quite a number of viewers, her laugh has been perceived as similar to a car engine starting.</p>
+            </div>
+          </div>
+          <div class="links-social">
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
         </div>
       </div>
-    </footer>
-    <!-- footer -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script>
-      var swiper = new Swiper(".reine", {
-          slidesPerView: 1,
-          spaceBetween: 20,
-          pagination: {
-            el: "swiper-pagination",
-            clickable: true,
-          },
-          breakpoints: {
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 10,
-            },
-          },
-      });
-    </script>
+    </div>
+  </section>
+  <!-- Hero-->
+
+  <!-- Songs -->
+  <section class="discography mt-5">
+    <div class="container_content">
+      <h1 class="title">Discography</h1>
+      <div class="row mt-3">
+        <div class="swiper reine-og">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="Assets/img/slapbystep.webp" alt="og1" class="img-fluid card-img-top p-3">
+                <div class="card-body">
+                  <h4>Slap By Step</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="Assets/img/All-Aboard vivId.webp" alt="og2" class="img-fluid card-img-top p-3">
+                <div class="card-body">
+                  <h4>All Aboard viv:ID Cruise</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="Assets/img/Sip-Some-Tea-FINAL-JACKET-.webp" alt="og3" class="img-fluid card-img-top p-3">
+                <div class="card-body">
+                  <h4>Sip Some Tea</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="Assets/img/HOLOTORI-Dance.webp" alt="og4" class="img-fluid card-img-top p-3">
+                <div class="card-body">
+                  <h4>HOLOTORI Dance</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="Assets/img/Pavolia-Reine_Illusion-Night_jk.webp" alt="og5" class="img-fluid card-img-top p-3">
+                <div class="card-body">
+                  <h4>Illusion Night</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100">
+                <img src="Assets/img/identity-voices.webp" alt="og6" class="img-fluid card-img-top p-3">
+                <div class="card-body">
+                  <h4>id:entity Voices</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Song -->
+
+  <!-- data profile -->
+  <section class="data-profile">
+    <div class="container">
+      <div class="card-profile mx-auto text-center">
+        <h1>profile</h1>
+        <table>
+          <tr>
+            <th scope="row">Birthday</th>
+            <td>09 September</td>
+          </tr>
+          <tr>
+            <th scope="row">Debut Stream</th>
+            <td>06 December 2020</td>
+          </tr>
+          <tr>
+            <th scope="row">Height</th>
+            <td>172cm</td>
+          </tr>
+          <tr>
+          <tr>
+            <th scope="row">Unit</th>
+            <td>Hololive Indonesia</td>
+          </tr>
+          <tr>
+            <th scope="row">Fan Name</th>
+            <td>MERAKyats</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <!-- data profile -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="footer1 d-flex">
+        <ul class="twyt d-flex">
+          <li>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+        </ul>
+        <p class="mt-3">
+          <a href="#" class="footer-link">Company Recruit</a> |
+          <a href="#" class="footer-link">Privacy Police</a> |
+          <a href="#" class="footer-link">Contact Us</a>
+        </p>
+      </div>
+      <div class="footer2 d-flex">
+        <p class="copyright">&copy; 2016 COVER Corp.</p>
+        <p class="company">
+          Operation Company
+          <img src="Assets/img/logo_cover.svg" alt="" />
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".reine-og", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+});
+</script>
 </body>
 </html>

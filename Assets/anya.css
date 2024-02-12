@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Rubik:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@500&family=Nunito+Sans:ital,opsz,wght@0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
+}
+body{
+    background-image: url(img/bg_holoId.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar{
     background: transparent;
@@ -13,12 +19,6 @@
     background-color: #5EDCEE;
     width: 6px;
     border-radius: 6px;
-}
-body{
-    background-image: url(img/background.webp);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
 }
 .navbar-toggler{
     width: 10px;
@@ -81,105 +81,135 @@ body{
     background-color: #26C5FD;
 }
 .navbar{
-    background-color: #FFFFFE;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
 }
 .navbar-brand{
     width: 140px;
-    height: 65px;
+    height: 62px;
 }
 .nav-item{
     margin: 0 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
+    color: #494949;
+    font-size: 18px;
 }
 .nav-item a:hover{
     color: #26C5FD;
 }
-.container-content{
-    margin: 0 2rem;
+.container_content{
+    margin: 0.4em 3.4rem;
 }
-.img-fluid{
-    position: relative;
-    border-radius: 10px;
+.box_img {
+    width: 27rem;
+    margin: auto;
+    background-color: #F2C95C;
+    height: 500px;
+    overflow: hidden;
 }
-.breadcrumb-item a{
-    color: #0084b4;
-    text-decoration: none;
+.box_img img{
+    width: 46rem;
+    margin-left: -5rem;
 }
-.fanart{
-    position: absolute;
-    margin-top: -1.5rem;
-    top: 160px;
-    left: 40px;
-    color: #094067;
+.jp{
+    font-size: 25px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
 }
-.talent{
-    width: 350px;
-    position: absolute;
-    margin-top: -16rem;
-    margin-left: 150px;
-}
-.desc-holo{
-    margin-top: 2rem;
-    line-height: 25px;
-    text-align: justify;
-}
-.name-holo{
-    color: #094067;
-}
-.name-jp{
-    font-weight: 700;
-    color: #094067;
-}
-.desc{
-    margin-top: 1rem;
-}
-.social{
-    list-style: none;
-    margin: 10px -35px;
-}
-.social i{
-    color: #094067;
-    margin-right: 14px;
-    transition: 0.3s;
-}
-.social i:hover{
-    transform: translateY(-10px);
-}
-.card{
-    background-color: #9ff2ff;
-    border: none;
-}
-.music{
-    list-style: none;
-    margin-left: -30px;
-}
-.music i{
-    margin-right: 14px;
-}
-.jumbotron{
-    margin-top: 3rem;
-    background-color: #ffd34e;
-    border: 3px solid #ae8300;
-    border-radius: 10px;
-}
-.title-profile{
+.name_talent{
+    font-size: 6em;
+    font-family: "Anton",sans-serif;
     text-transform: uppercase;
-    margin:2rem 0;
-    letter-spacing: 2px;
-    color: #ae8300;
+    color: #F2C95C;
+    line-height: 0.9;
 }
-dd{
+.catchphrase{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1.3rem;
+}
+.detail_profile p{
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 1.6rem;
+}
+.links-social{
+    margin-top: 1.rem;
+}
+.links-social a{
+    padding: 6px 10px;
+    font-size: 1.4rem;
+    margin-right: 10px;
+    border-radius: 50px;
+    background-color: #F2C95C;
     color: #191919;
+    transition: all .2s ease;
+}
+.links-social a:hover{
+    color: #F2C95C;
+    background-color: #191919;
 }
 .footer {
-    background-color:#26C5FD ;
+    background-color:#475266 ;
     color: #fff;
     text-align: left;
     margin-top: 1.5rem;
     font-weight: 500;
+}
+.discography{
+    margin-top: -0.4rem;
+    background-color: #f2ca5cd3;
+    padding: 2rem 0;
+}
+.title{
+    font-weight: 600;
+}
+.card{
+    background-color: #fff;
+    border: none;
+}
+.card-body{
+    color: #0f0f0f;
+}
+.card-body h4{
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: -1rem;
+}
+.data-profile{
+    margin-top: 5rem;
+}
+.data-profile h1{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #094067;
+    margin: 2rem 0 0.3rem;
+}
+.card-profile{
+    background-color: #D5EAFF;
+    border: 4px solid #094067;
+    border-radius: 20px;
+}
+.card-profile table{
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.card-profile tr> *{
+    padding: 0.6rem 10rem;
+}
+.card-profile th{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+}
+.card-profile td{
+    text-align: left;
+    font-size: 18px;
 }
 .footer1 {
     justify-content: space-between;
@@ -211,40 +241,84 @@ dd{
 }
 .twyt i {
     color: #fff;
+    font-size: 2em;
     margin-right: 25px;
     transition: 0.3s;
 }
 .twyt i:hover {
-    transform: translateY(-10px);
+    transform: translateY(-6px);
 }
-@media screen and (max-width:768px){
-    .talent{
-        position: relative;
-        margin: -10px 35px;
+@media screen and (max-width: 768px){
+    .box_img {
+        width: 25rem;
+        margin: auto;
+        background-color: transparent;
+        overflow: visible;
+        margin-bottom: 1rem;
+    }
+    .box_img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .card-profile tr> *{
+        padding: 1rem 3rem;
+    }
+    .company {
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .company img {
+        width: 100px;
+    }
+    .name_talent{
+        font-size: 4rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .catchphrase{
+        text-align: justify;
+        font-size: 17px;
+    }
+    .jp{
+        text-align: center;
+        font-size: 16px;
+    }
+    .footer1 {
+        flex-direction: column;
+        margin: auto;
     }
     .footer2 {
         flex-direction: column;
     }
-      .company {
-        margin: auto;
-        margin-bottom: 25px;
-    }
-      .company img {
-        width: 100px;
-    }
-      .footer1 {
-        flex-direction: column;
-        margin: auto;
-    }
-      .footer-link {
+    .footer-link {
         font-size: 12px;
     }
-      .twyt {
+    .twyt {
         margin-bottom: -15px;
     }
+    .discography{
+        margin-top: 3.5rem;
+    }
 }
-@media screen and (max-width:414px) {
-    .talent{
-        width: 250px;
+@media screen and (max-width: 414px){
+    .box_img {
+        width: 23rem;
+        margin: auto;
+    }
+    .box_img img{
+        margin-left: 0;
+    }
+    .name_talent{
+        text-align: center;
+        font-size: 2.8rem;
+        margin-top: -2rem;
+    }
+    .jp{
+        text-align: center;
+        font-size: 15px;
+    }
+    .catchphrase{
+        font-size: 17px;
+        text-align: justify;
     }
 }
